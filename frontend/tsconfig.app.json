@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "es2023",
+    "lib": ["ES2023", "DOM"],
+    "module": "esnext",
+    "types": ["vite/client"],
+    "allowArbitraryExtensions": true,
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true,
+    "strict": true /* Strikte Typenprüfung aktivieren */,
+    "noImplicitAny": true /* Verhindert implizite 'any'-Typen */,
+    "strictNullChecks": true /* Zwingt dich, null/undefined explizit abzufangen */,
+    "noUnusedLocals": true /* Fehler bei ungenutzten Variablen */,
+    "noUnusedParameters": true /* Fehler bei ungenutzten Funktionsparametern */,
+    "noImplicitReturns": true /* Jede Funktion muss explizit etwas zurückgeben */,
+    "noUncheckedIndexedAccess": true /* Verhindert Fehler beim Zugriff auf Arrays/Objekte */
+  },
+  "include": ["src"]
+}
