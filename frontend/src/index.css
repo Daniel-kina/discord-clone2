@@ -14,6 +14,8 @@
   --color-discord-dark-tertiary: #202225; /* Leftmost server list / Header borders */
   --color-discord-dark-floating: #18191c; /* Modals / Dropdowns */
 
+  --color-discord-border: #3a3a3d; /* For app frames / outer borders */
+
   /* --- Text Colors --- */
   --color-discord-text-normal: #dcddde; /* Standard message text */
   --color-discord-text-muted: #8e9297; /* Channel names / Timestamps / Placeholders */
