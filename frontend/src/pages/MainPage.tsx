@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import LeftSideBar from "@/components/LeftSideBar";
+import LeftSideBar from "@/features/sidebar/components/LeftSideBar";
 
 import { useState } from "react";
 
@@ -8,10 +8,10 @@ export default function MainPage() {
   const [sidebarSize, setSidebarSize] = useState("432");
 
   return (
-    <div>
+    <div className="h-screen flex flex-col">
       <Header title={headerTitle}></Header>
       <main
-        className="grid"
+        className="grid text-white h-full"
         style={{ gridTemplateColumns: `${sidebarSize}px 1fr` }}
       >
         <LeftSideBar sidebarSize={sidebarSize}></LeftSideBar>

@@ -9,6 +9,7 @@
   --color-discord-fuchsia: #eb459e; /* Boosts / Special highlights */
 
   /* --- UI / Dark Theme Backgrounds --- */
+  --color-discord-bright-primary: #4a4d55; /* selbst erstellt */
   --color-discord-dark-primary: #36393f; /* Main chat background (Legacy #36393F / updated to #313338 in newer redesigns) */
   --color-discord-dark-secondary: #2f3136; /* Server sidebar / Channel list */
   --color-discord-dark-tertiary: #202225; /* Leftmost server list / Header borders */

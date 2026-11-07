@@ -1,10 +1,11 @@
 import { Medal, Store, Users } from "lucide-react";
 import SideBarButton from "./SideBarButton";
 import FindChatButton from "./FindChatButton";
+import MessagesList from "./MessagesList";
 
 export default function MessagesSidebar() {
   return (
-    <div className="h-screen border-l border-t rounded-tl-2xl">
+    <div className="border-l border-t rounded-tl-2xl">
       <div className="h-12 py-2 px-2 border-b flex items-center">
         <FindChatButton></FindChatButton>
       </div>
@@ -23,6 +24,7 @@ export default function MessagesSidebar() {
         ></SideBarButton>
       </div>
       <div className="seperator w-[95%] h-px bg-black self-center m-auto"></div>
+      <MessagesList></MessagesList>
     </div>
   );
 }
