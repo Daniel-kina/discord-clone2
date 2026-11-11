@@ -1,3 +1,4 @@
+import ToolTip from "@/components/ToolTip";
 import DashboardIconAndChevron from "@/features/sidebar/components/DashboardIconAndChevron";
 import ProfilePic from "@/features/sidebar/components/ProfilePic";
 import { Phone, Pin, UserGroup, UserPlus, Video } from "lucide-react";
@@ -10,27 +11,25 @@ export default function ChatTop() {
         <span>Faisal</span>
       </div>
       <div className="flex gap-4">
-        <DashboardIconAndChevron
-          icon={<Phone />}
-          onlyIcon={true}
-        ></DashboardIconAndChevron>
+        <ToolTip side="bottom" content="Call">
+          <DashboardIconAndChevron icon={<Phone />} onlyIcon={true} />
+        </ToolTip>
 
-        <DashboardIconAndChevron
-          icon={<Video />}
-          onlyIcon={true}
-        ></DashboardIconAndChevron>
-        <DashboardIconAndChevron
-          icon={<Pin />}
-          onlyIcon={true}
-        ></DashboardIconAndChevron>
-        <DashboardIconAndChevron
-          icon={<UserPlus />}
-          onlyIcon={true}
-        ></DashboardIconAndChevron>
-        <DashboardIconAndChevron
-          icon={<UserGroup />}
-          onlyIcon={true}
-        ></DashboardIconAndChevron>
+        <ToolTip side="bottom" content="Start Video Call">
+          <DashboardIconAndChevron icon={<Video />} onlyIcon={true} />
+        </ToolTip>
+
+        <ToolTip side="bottom" content="Pinned Messages">
+          <DashboardIconAndChevron icon={<Pin />} onlyIcon={true} />
+        </ToolTip>
+
+        <ToolTip side="bottom" content="Add Friends to DM">
+          <DashboardIconAndChevron icon={<UserPlus />} onlyIcon={true} />
+        </ToolTip>
+
+        <ToolTip side="bottom" content="Member List">
+          <DashboardIconAndChevron icon={<UserGroup />} onlyIcon={true} />
+        </ToolTip>
       </div>
     </div>
   );

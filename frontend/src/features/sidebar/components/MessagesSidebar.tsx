@@ -2,6 +2,7 @@ import { Medal, Store, Users } from "lucide-react";
 import SideBarButton from "./SideBarButton";
 import FindChatButton from "./FindChatButton";
 import MessagesList from "./MessagesList";
+import ToolTip from "@/components/ToolTip";
 
 export default function MessagesSidebar() {
   return (
@@ -10,18 +11,32 @@ export default function MessagesSidebar() {
         <FindChatButton></FindChatButton>
       </div>
       <div className="flex flex-col justify-around py-2 gap-0.5">
-        <SideBarButton
-          icon={<Users className="w-5 h-5" />}
-          text="Friends"
-        ></SideBarButton>
-        <SideBarButton
-          icon={<Store className="w-5 h-5" />}
-          text="Shop"
-        ></SideBarButton>
-        <SideBarButton
-          icon={<Medal className="w-5 h-5" />}
-          text="Quests"
-        ></SideBarButton>
+        <ToolTip
+          side="right"
+          content="Friends"
+          children={
+            <SideBarButton
+              icon={<Users className="w-5 h-5" />}
+              text="Friends"
+            />
+          }
+        />
+
+        <ToolTip
+          side="right"
+          content="Shop"
+          children={
+            <SideBarButton icon={<Store className="w-5 h-5" />} text="Shop" />
+          }
+        />
+
+        <ToolTip
+          side="right"
+          content="Quests"
+          children={
+            <SideBarButton icon={<Medal className="w-5 h-5" />} text="Quests" />
+          }
+        />
       </div>
       <div className="seperator w-[95%] h-px bg-black self-center m-auto"></div>
       <MessagesList></MessagesList>

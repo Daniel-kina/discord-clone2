@@ -9,7 +9,7 @@ export default function MainPage() {
   const [sidebarSize, setSidebarSize] = useState("432");
 
   return (
-    <div className="h-screen flex flex-col">
+    <div className="h-screen flex flex-col overflow-hidden">
       <Header title={headerTitle}></Header>
       <main
         className="grid text-white h-full"

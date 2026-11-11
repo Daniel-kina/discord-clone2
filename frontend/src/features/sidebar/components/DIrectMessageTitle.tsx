@@ -1,3 +1,4 @@
+import ToolTip from "@/components/ToolTip";
 import { Ellipsis, Plus } from "lucide-react";
 
 export default function DirectMessageTitle() {
@@ -7,14 +8,18 @@ export default function DirectMessageTitle() {
       <div>
         <div className="flex gap-2">
           <span>
-            <Ellipsis />
+            <ToolTip
+              side="right"
+              content="clear chats"
+              children={<Ellipsis />}
+            ></ToolTip>
           </span>
           <span className="relative group">
-            <Plus />
-
-            <div className="absolute left-full ml-3 px-3 py-1.5 bg-[#111214] text-white text-sm font-semibold rounded-md shadow-xl opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-150 whitespace-nowrap z-50">
-              Create Message
-            </div>
+            <ToolTip
+              side="right"
+              content="start message"
+              children={<Plus />}
+            ></ToolTip>
           </span>
         </div>
       </div>
