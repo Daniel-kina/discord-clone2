@@ -6,7 +6,7 @@ export default function UserDashboard() {
   return (
     <div className="dashboard col-span-2 px-2 py-2 pt-0 bg-discord-dark-tertiary">
       <div className="px-2 py-2 bg-discord-dark-primary rounded-md flex justify-between items-center">
-        <div className="flex gap-2 items-center">
+        <div className="flex gap-2 items-center ">
           <ProfilePic></ProfilePic>
           <div className="flex flex-col">
             <p>Kina</p>
@@ -30,3 +30,5 @@ export default function UserDashboard() {
     </div>
   );
 }
+
+//alle icons und profilepic usw mit buttons wrappen

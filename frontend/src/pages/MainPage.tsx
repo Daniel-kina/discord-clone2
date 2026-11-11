@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Chat from "@/features/chat/Chat";
 import LeftSideBar from "@/features/sidebar/components/LeftSideBar";
 
 import { useState } from "react";
@@ -16,7 +17,7 @@ export default function MainPage() {
       >
         <LeftSideBar sidebarSize={sidebarSize}></LeftSideBar>
 
-        <div>Chat</div>
+        <Chat></Chat>
       </main>
     </div>
   );
